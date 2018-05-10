@@ -1,0 +1,344 @@
+use cmpe273_kayak;
+
+db.ExpediaFlights.insert({
+  'flightId': 'ED100',
+  'operator': 'Delta Airlines',
+  'imageurl': 'deltaairlines.jpg',
+  'class':[
+
+                {'type':'Economy','price':100, 'capacity':100},
+                 {'type':'First','price':200 , 'capacity':100},
+                  {'type':'Business','price':300 , 'capacity':100}
+             ] ,
+     'flights':[
+                  {
+                     'arrivaltime': '16:00',
+                       'arrivalday' : 'Tue',
+                       'departuretime': '00:00',
+                       'departureday' : 'Wed',
+                     'origin': {'city':'San Francisco', 'state':'California', 'country':'USA', 'airport':'San Francisco International Airport'},
+                     'destination': {'city':'San Jose', 'state':'California', 'country':'USA', 'airport':'San Jose Airport'}
+
+                 },
+                 {
+                      'arrivaltime': '02:00',
+                     'arrivalday' : 'Thu',
+                     'departuretime': '18:00',
+                     'departureday' : 'Mon',
+                      'origin': {'city':'San Jose', 'state':'California', 'country':'USA', 'airport':'San Jose Airport'},
+                      'destination': {'city':'San Francisco', 'state':'California', 'country':'USA', 'airport':'San Francisco International Airport'}
+
+                  }
+           ]
+})
+
+
+db.ExpediaFlights.insert({
+  'flightId': 'ED101',
+  'operator': 'Air India',
+  'imageurl': 'airindia.jpg',
+  'class':[
+
+                {'type':'Economy','price':100, 'capacity':50},
+                 {'type':'First','price':200 , 'capacity':50},
+                  {'type':'Business','price':300 , 'capacity':10}
+             ] ,
+     'flights':[
+                  {
+                     'arrivaltime': '16:00',
+                       'arrivalday' : 'Thu',
+                       'departuretime': '00:00',
+                       'departureday' : 'Mon',
+                     'origin': {'city':'San Francisco', 'state':'California', 'country':'USA', 'airport':'San Francisco International Airport'},
+                     'destination': {'city':'San Jose', 'state':'California', 'country':'USA', 'airport':'San Jose Airport'}
+
+                 },
+                 {
+                      'arrivaltime': '02:00',
+                     'arrivalday' : 'Tue',
+                     'departuretime': '18:00',
+                     'departureday' : 'Wed',
+                      'origin': {'city':'San Jose', 'state':'California', 'country':'USA', 'airport':'San Jose Airport'},
+                      'destination': {'city':'San Francisco', 'state':'California', 'country':'USA', 'airport':'San Francisco International Airport'}
+
+                  }
+           ]
+})
+
+
+db.MmtFlights.insert({
+  'flightId': 'MMT100',
+  'operator': 'Lufthansa Airlines',
+  'imageurl': 'lufthansa.png',
+  'class':[
+
+                {'type':'Economy','price':100, 'capacity':50},
+                 {'type':'First','price':200 , 'capacity':50},
+                  {'type':'Business','price':300 , 'capacity':10}
+             ] ,
+     'flights':[
+                  {
+                     'arrivaltime': '16:00',
+                       'arrivalday' : 'Thu',
+                       'departuretime': '00:00',
+                       'departureday' : 'Mon',
+                     'origin': {'city':'San Francisco', 'state':'California', 'country':'USA', 'airport':'San Francisco International Airport'},
+                     'destination': {'city':'San Jose', 'state':'California', 'country':'USA', 'airport':'San Jose Airport'}
+
+                 }
+           ]
+})
+
+
+db.MmtFlights.insert({
+  'flightId': 'MMT101',
+  'operator': 'Air China Airlines',
+  'imageurl': 'airchina.jpeg',
+  'class':[
+
+                {'type':'Economy','price':100, 'capacity':50},
+                 {'type':'First','price':200 , 'capacity':50},
+                  {'type':'Business','price':300 , 'capacity':10}
+             ] ,
+     'flights':[
+                  {
+                     'arrivaltime': '05:00',
+                       'arrivalday' : 'Thu',
+                       'departuretime': '11:00',
+                       'departureday' : 'Mon',
+                     'origin': {'city':'San Francisco', 'state':'California', 'country':'USA', 'airport':'San Francisco International Airport'},
+                     'destination': {'city':'San Jose', 'state':'California', 'country':'USA', 'airport':'San Jose Airport'}
+
+                 },
+                 {
+                      'arrivaltime': '06:00',
+                     'arrivalday' : 'Tue',
+                     'departuretime': '10:00',
+                     'departureday' : 'Wed',
+                      'origin': {'city':'San Jose', 'state':'California', 'country':'USA', 'airport':'San Jose Airport'},
+                      'destination': {'city':'San Francisco', 'state':'California', 'country':'USA', 'airport':'San Francisco International Airport'}
+
+                  }
+           ]
+})
+
+
+
+db.CleartripFlights.insert({
+  'flightId': 'CT100',
+  'operator': 'Deccan Airlines',
+  'imageurl': 'airdeccan.jpg',
+  'class':[
+
+                {'type':'Economy','price':100, 'capacity':10},
+                 {'type':'First','price':200 , 'capacity':10},
+                  {'type':'Business','price':300 , 'capacity':5}
+             ] ,
+     'flights':[
+                  {
+                     'arrivaltime': '08:00',
+                       'arrivalday' : 'Thu',
+                       'departuretime': '22:00',
+                       'departureday' : 'Mon',
+                     'origin': {'city':'San Francisco', 'state':'California', 'country':'USA', 'airport':'San Francisco International Airport'},
+                     'destination': {'city':'San Jose', 'state':'California', 'country':'USA', 'airport':'San Jose Airport'}
+
+                 },
+                 {
+                      'arrivaltime': '15:00',
+                     'arrivalday' : 'Tue',
+                     'departuretime': '09:00',
+                     'departureday' : 'Wed',
+                      'origin': {'city':'San Jose', 'state':'California', 'country':'USA', 'airport':'San Jose Airport'},
+                      'destination': {'city':'San Francisco', 'state':'California', 'country':'USA', 'airport':'San Francisco International Airport'}
+
+                  }
+           ]
+})
+
+
+db.CleartripFlights.insert({
+  'flightId': 'CT101',
+  'operator': 'Jet Airways',
+  'imageurl': 'jetairways.jpg',
+  'class':[
+
+                {'type':'Economy','price':100, 'capacity':10},
+                 {'type':'First','price':200 , 'capacity':10},
+                  {'type':'Business','price':300 , 'capacity':5}
+             ] ,
+     'flights':[
+                  {
+                     'arrivaltime': '08:00',
+                       'arrivalday' : 'Thu',
+                       'departuretime': '22:00',
+                       'departureday' : 'Mon',
+                     'origin': {'city':'New York', 'state':'New York', 'country':'USA', 'airport':'San Francisco International Airport'},
+                     'destination': {'city':'San Diego', 'state':'California', 'country':'USA', 'airport':'San Jose Airport'}
+
+                 }
+           ]
+})
+
+
+
+
+
+db.MmtCars.insert({
+'carId':'MMT101',
+'cartype':'Small',
+'carmodel':'BMW',
+'imageurl': 'BMW.png',
+'specification':'automatic',
+'pickupaddress': {'street':'101 E San Fernando St.','city':'San Jose', 'state': 'California', 'country':'USA'},
+'dropoffaddress': {'street':'101 E San Fernando St.','city':'San Jose', 'state': 'California', 'country':'USA'},
+'dailyrent':100})
+
+
+db.CleartripCars.insert({
+'carId': 'CT101',
+'cartype':'Medium',
+'carmodel':'Audi',
+'imageurl': 'audi.png',
+'specification':'manual',
+'pickupaddress': {'street':'101 E San Fernando St.','city':'San Jose', 'state': 'California', 'country':'USA'},
+'dropoffaddress': {'street':'101 E San Fernando St.','city':'San Jose', 'state': 'California', 'country':'USA'},
+'dailyrent':200})
+
+
+db.AlamoCars.insert({
+'carId': 'AL101',
+'cartype':'Large',
+'carmodel':'Lexus',
+'imageurl': 'lexus.png',
+'specification':'manual',
+'pickupaddress': {'street':'101 E San Fernando St.','city':'San Jose', 'state': 'California', 'country':'USA'},
+'dropoffaddress': {'street':'101 E San Fernando St.','city':'San Jose', 'state': 'California', 'country':'USA'},
+'dailyrent':200})
+
+
+
+db.MmtCars.insert({
+'carId':'MMT102',
+'cartype':'SUV',
+'carmodel':'BMW',
+'specification':'automatic',
+'imageurl': 'BMW.png',
+'pickupaddress': {'street':'101 E San Fernando St.','city':'San Jose', 'state': 'California', 'country':'USA'},
+'dropoffaddress': {'street':'101 E San Fernando St.','city':'San Jose', 'state': 'California', 'country':'USA'},
+'dailyrent':150})
+
+
+db.CleartripCars.insert({
+'carId': 'CT102',
+'cartype':'Luxury',
+'carmodel':'Audi',
+'imageurl': 'audi.png',
+'specification':'manual',
+'pickupaddress': {'street':'101 E San Fernando St.','city':'San Jose', 'state': 'California', 'country':'USA'},
+'dropoffaddress': {'street':'101 E San Fernando St.','city':'San Jose', 'state': 'California', 'country':'USA'},
+'dailyrent':90})
+
+
+db.AlamoCars.insert({
+'carId': 'AL101',
+'cartype':'Van',
+'carmodel':'Lexus',
+'imageurl': 'lexus.png',
+'specification':'manual',
+'pickupaddress': {'street':'101 E San Fernando St.','city':'San Jose', 'state': 'California', 'country':'USA'},
+'dropoffaddress': {'street':'101 E San Fernando St.','city':'San Jose', 'state': 'California', 'country':'USA'},
+'dailyrent':230})
+
+
+
+
+
+
+db.MmtHotels.insert({
+'hotelId': 'MMT111',
+'name': 'Holiday Inn',
+'imageurl': 'holidayinn.jpg',
+'description': 'Very good hotel. Easily accessible by car and good for sightseeing. Great rooms and fantastic service. Awesome vibe.',
+'address': {'street':'101 E San Fernando Street','city':'San Jose', 'state': 'California', 'country':'USA', 'zip':'95112'},
+'stars': 3,
+'reviews':['Good', 'Bad', 'Awesome Food'],
+'rating':8.5,
+'rooms':[
+     {'roomtype':'Delux', 'price':120, 'rooomcount':100},
+     {'roomtype':'Super Delux','price':220, 'rooomcount':100},
+     {'roomtype':'Premium','price':320, 'rooomcount':100}
+    ]
+    })
+
+
+
+db.CleartripHotels.insert({
+'hotelId': 'CT112',
+'name': 'Lemon Tree',
+'imageurl': 'lemontree.jpg',
+'description': 'Very good hotel. Easily accessible by car and good for sightseeing. Great rooms and fantastic service. Awesome vibe.',
+'address': {'street':'201 S 4th St #100','city':'San Jose', 'state': 'California', 'country':'USA', 'zip':'95112'},
+'stars': 5,
+'reviews':['Good', 'Bad', 'Awesome Food'],
+'rating':9.5,
+'rooms':[
+    {'roomtype':'Delux', 'price':520, 'rooomcount':100},
+         {'roomtype':'Super Delux','price':720, 'rooomcount':100},
+         {'roomtype':'Premium','price':920, 'rooomcount':100}
+    ]
+    })
+
+
+
+db.TripAdvisorHotels.insert({
+'hotelId': 'MMT113',
+'name': 'Hyatt',
+'imageurl': 'hyatt.jpg',
+'description': 'Very good hotel. Easily accessible by car and good for sightseeing. Great rooms and fantastic service. Awesome vibe.',
+'address': {'street':'33 S 3rd St','city':'San Jose', 'state': 'California', 'country':'USA', 'zip':'95112'},
+'stars': 4,
+'reviews':['Good', 'Bad', 'Awesome Food'],
+'rating':7.5,
+'rooms':[
+     {'roomtype':'Delux', 'price':120, 'rooomcount':100},
+          {'roomtype':'Super Delux','price':440, 'rooomcount':100},
+          {'roomtype':'Premium','price':1000, 'rooomcount':100}
+    ]
+    })
+
+
+
+db.CleartripHotels.insert({
+'hotelId': 'CT112',
+'name': 'Lemon Tree',
+'imageurl': 'lemontree.jpg',
+'description': 'Very good hotel. Easily accessible by car and good for sightseeing. Great rooms and fantastic service. Awesome vibe.',
+'address': {'street':'55 Cyril Magnin St','city':'San Francisco', 'state': 'California', 'country':'USA', 'zip':'95112'},
+'stars': 5,
+'reviews':['Good', 'Bad', 'Awesome Food'],
+'rating':9.5,
+'rooms':[
+    {'roomtype':'Delux', 'price':520, 'rooomcount':100},
+         {'roomtype':'Super Delux','price':720, 'rooomcount':100},
+         {'roomtype':'Premium','price':920, 'rooomcount':100}
+    ]
+    })
+
+
+
+db.TripAdvisorHotels.insert({
+'hotelId': 'TAH113',
+'name': 'Hyatt',
+'imageurl': 'hyatt.jpg',
+'description': 'Very good hotel. Easily accessible by car and good for sightseeing. Great rooms and fantastic service. Awesome vibe.',
+'address': {'street':'12 4th St','city':'San Francisco', 'state': 'California', 'country':'USA', 'zip':'95112'},
+'stars': 4,
+'reviews':['Good', 'Bad', 'Awesome Food'],
+'rating':7.5,
+'rooms':[
+     {'roomtype':'Delux', 'price':120, 'rooomcount':100},
+          {'roomtype':'Super Delux','price':440, 'rooomcount':100},
+          {'roomtype':'Premium','price':1000, 'rooomcount':100}
+    ]
+    })
