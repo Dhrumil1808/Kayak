@@ -1,0 +1,153 @@
+
+db.MmtHotels.insert({
+'hotelId': 'MMT100',
+'name': 'Holiday Inn',
+'imageurl': 'holidayinn.jpg',
+'description': 'Very good hotel. Easily accessible by car and good for sightseeing. Great rooms and fantastic service. Awesome vibe.',
+'address': {'street':'1350 N 1st St','city':'San Jose', 'state': 'California', 'country':'USA', 'zip':'95112'},
+'stars': 3,
+'reviews':['Good', 'Bad', 'Awesome Food'],
+'rating':8.5,
+'rooms':[
+     {'roomtype':'Delux', 'price':120, 'rooomcount':100},
+     {'roomtype':'Super Delux','price':220, 'rooomcount':100},
+     {'roomtype':'Premium','price':320, 'rooomcount':100}
+    ]
+    })
+
+db.MmtHotels.insert({
+'hotelId': 'MMT101',
+'name': 'Hyatt Regency',
+'imageurl': 'hyatt2.jpg',
+'description': 'Very good hotel. Easily accessible by car and good for sightseeing. Great rooms and fantastic service. Awesome vibe.',
+'address': {'street':'282 Almaden Blvd','city':'San Jose', 'state': 'California', 'country':'USA', 'zip':'95102'},
+'stars': 4,
+'reviews':['Good', 'Bad', 'Awesome Food'],
+'rating':8.5,
+'rooms':[
+     {'roomtype':'Delux', 'price':140, 'rooomcount':100},
+     {'roomtype':'Super Delux','price':220, 'rooomcount':100},
+     {'roomtype':'Premium','price':320, 'rooomcount':100}
+    ]
+    })
+
+db.MmtHotels.insert({
+'hotelId': 'MMT102',
+'name': 'Hyatt',
+'imageurl': 'hyatt.jpg',
+'description': 'Very good hotel. Easily accessible by car and good for sightseeing. Great rooms and fantastic service. Awesome vibe.',
+'address': {'street':'5 Embarcadero Center','city':'San Jose', 'state': 'California', 'country':'USA', 'zip':'95135'},
+'stars': 4,
+'reviews':['Good', 'Bad', 'Awesome Food'],
+'rating':7.5,
+'rooms':[
+     {'roomtype':'Delux', 'price':120, 'rooomcount':100},
+          {'roomtype':'Super Delux','price':440, 'rooomcount':100},
+          {'roomtype':'Premium','price':1000, 'rooomcount':100}
+    ]
+    })
+
+
+
+db.CleartripHotels.insert({
+'hotelId': 'CT100',
+'name': 'Lemon Tree',
+'imageurl': 'lemontree.jpg',
+'description': 'Very good hotel. Easily accessible by car and good for sightseeing. Great rooms and fantastic service. Awesome vibe.',
+'address': {'street':'3427 El Camino Real','city':'San Jose', 'state': 'California', 'country':'USA', 'zip':'95139'},
+'stars': 5,
+'reviews':['Good', 'Bad', 'Awesome Food'],
+'rating':9.5,
+'rooms':[
+    {'roomtype':'Delux', 'price':520, 'rooomcount':100},
+         {'roomtype':'Super Delux','price':720, 'rooomcount':100},
+         {'roomtype':'Premium','price':920, 'rooomcount':100}
+    ]
+    })
+
+
+db.CleartripHotels.insert({
+'hotelId': 'CT101',
+'name': 'The Leela',
+'imageurl': 'lemontree.jpg',
+'description': 'Very good hotel. Easily accessible by car and good for sightseeing. Great rooms and fantastic service. Awesome vibe.',
+'address': {'street':'875 N 13th St','city':'San Jose', 'state': 'California', 'country':'USA', 'zip':'95200'},
+'stars': 3,
+'reviews':['Good', 'Bad', 'Awesome Food'],
+'rating':9.5,
+'rooms':[
+    {'roomtype':'Delux', 'price':590, 'rooomcount':100},
+         {'roomtype':'Super Delux','price':720, 'rooomcount':100},
+         {'roomtype':'Premium','price':920, 'rooomcount':100}
+    ]
+    })
+
+db.CleartripHotels.insert({
+'hotelId': 'CT102',
+'name': 'Quality Inn',
+'imageurl': 'quality-inn.jpg',
+'description': 'Very good hotel. Easily accessible by car and good for sightseeing. Great rooms and fantastic service. Awesome vibe.',
+'address': {'street':'2390 Harris Way','city':'San Jose', 'state': 'California', 'country':'USA', 'zip':'95250'},
+'stars': 3,
+'reviews':['Good', 'Bad', 'Awesome Food'],
+'rating':9.5,
+'rooms':[
+    {'roomtype':'Delux', 'price':590, 'rooomcount':100},
+         {'roomtype':'Super Delux','price':720, 'rooomcount':100},
+         {'roomtype':'Premium','price':920, 'rooomcount':100}
+    ]
+    })
+
+
+
+db.TripAdvisorHotels.insert({
+'hotelId': 'TAH100',
+'name': 'The Taj Mahal Palace',
+'imageurl': 'taj-mahal-palace.jpeg',
+'description': 'Very good hotel. Easily accessible by car and good for sightseeing. Great rooms and fantastic service. Awesome vibe.',
+'address': {'street':'10 Skyport Dr','city':'San Jose', 'state': 'California', 'country':'USA', 'zip':'95775'},
+'stars': 5,
+'reviews':['Good', 'Bad', 'Awesome Food'],
+'rating':7.5,
+'rooms':[
+     {'roomtype':'Delux', 'price':420, 'rooomcount':100},
+          {'roomtype':'Super Delux','price':440, 'rooomcount':100},
+          {'roomtype':'Premium','price':1000, 'rooomcount':100}
+    ]
+    })
+
+
+
+
+db.TripAdvisorHotels.insert({
+'hotelId': 'TAH101',
+'name': 'Trident',
+'imageurl': 'trident.jpg',
+'description': 'Very good hotel. Easily accessible by car and good for sightseeing. Great rooms and fantastic service. Awesome vibe.',
+'address': {'street':'12 4th St','city':'San Jose', 'state': 'California', 'country':'USA', 'zip':'95336'},
+'stars': 5,
+'reviews':['Good', 'Bad', 'Awesome Food'],
+'rating':7.5,
+'rooms':[
+     {'roomtype':'Delux', 'price':920, 'rooomcount':100},
+          {'roomtype':'Super Delux','price':440, 'rooomcount':100},
+          {'roomtype':'Premium','price':1000, 'rooomcount':100}
+    ]
+    })
+
+
+db.TripAdvisorHotels.insert({
+'hotelId': 'TAH102',
+'name': 'Hampton Inn & Suites',
+'imageurl': 'Hampton.jpg',
+'description': 'Very good hotel. Easily accessible by car and good for sightseeing. Great rooms and fantastic service. Awesome vibe.',
+'address': {'street':'12 4th St','city':'San Jose', 'state': 'California', 'country':'USA', 'zip':'95400'},
+'stars': 5,
+'reviews':['Good', 'Bad', 'Awesome Food'],
+'rating':7.5,
+'rooms':[
+     {'roomtype':'Delux', 'price':920, 'rooomcount':100},
+          {'roomtype':'Super Delux','price':440, 'rooomcount':100},
+          {'roomtype':'Premium','price':1000, 'rooomcount':100}
+    ]
+    })
